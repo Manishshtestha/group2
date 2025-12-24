@@ -1,6 +1,7 @@
 import 'package:clientx/screens/admin/admin_bottomnav.dart';
 import 'package:clientx/screens/client/client_bottomnav.dart';
 import 'package:clientx/screens/login_page.dart';
+import 'package:clientx/screens/manager/manager_bottomnav.dart';
 import 'package:clientx/screens/register_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,14 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        initialRoute: '/clientBottomNav',
-        routes:{
-            '/adminBottomNav':(context)=>AdminBottomNav(),
-            '/clientBottomNav':(context)=>ClientBottomnav(),
-            '/login':(context)=>LoginPage(),
-            '/register':(context)=>RegisterPage()
-        }
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/managerBottomNav',
+      routes: {
+        '/adminBottomNav': (context) => AdminBottomNav(),
+        '/clientBottomNav': (context) => ClientBottomnav(),
+        '/managerBottomNav': (context) => ManagerBottomnav(),
+        '/login': (context) => LoginPage(),
+        '/register': (context) => RegisterPage(),
+      },
     );
   }
 }
